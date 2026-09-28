@@ -2,12 +2,11 @@
 <html lang="en" class="govuk-template">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./stylesheets/govuk-frontend.min.css">
 
   <title>Check if you can make a claim - GOV.UK</title>
 
   <meta name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover">
+        content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet"
         href="./stylesheets/govuk-frontend.min.css">
@@ -23,18 +22,30 @@
       : '');
 </script>
 
+
+<!-- GOV.UK HEADER -->
+
 <header class="govuk-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
 
     <div class="govuk-header__logo">
       <a href="./index.html"
          class="govuk-header__link govuk-header__link--homepage">
-        GOV.UK
+
+        <span class="govuk-header__logotype">
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+
       </a>
     </div>
 
   </div>
 </header>
+
+
+<!-- PAGE CONTENT -->
 
 <div class="govuk-width-container">
 
@@ -57,7 +68,8 @@
         </h2>
 
         <p class="govuk-body">
-          You should usually try to resolve the problem with your employer first.
+          You should usually try to resolve the problem with your
+          employer first.
         </p>
 
         <a href="./page-2.html"
@@ -74,13 +86,76 @@
 
 </div>
 
+
+<!-- GOV.UK FOOTER -->
+
+<footer class="govuk-footer">
+
+  <div class="govuk-width-container">
+
+    <div class="govuk-footer__meta">
+
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+        <h2 class="govuk-visually-hidden">
+          Support links
+        </h2>
+
+        <ul class="govuk-footer__inline-list">
+
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="#">
+              Help
+            </a>
+          </li>
+
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="#">
+              Privacy
+            </a>
+          </li>
+
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="#">
+              Cookies
+            </a>
+          </li>
+
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="#">
+              Accessibility statement
+            </a>
+          </li>
+
+        </ul>
+
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          Open Government Licence v3.0, except where otherwise stated
+        </span>
+
+      </div>
+
+      <div class="govuk-footer__meta-item">
+        <a class="govuk-footer__link govuk-footer__copyright-logo"
+           href="#">
+          © Crown copyright
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- GOV.UK JAVASCRIPT -->
+
 <script type="module">
   import { initAll } from './javascripts/govuk-frontend.min.js'
   initAll()
 </script>
-<script type="module">
-  import { initAll } from './javascripts/govuk-frontend.min.js'
-  initAll()
-</script>
+
 </body>
 </html>
