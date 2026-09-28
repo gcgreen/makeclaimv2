@@ -3,7 +3,7 @@ name: Build prototype
 on:
   push:
     branches:
-      - main
+      - with-multiple-chapters
 
 permissions:
   contents: write
