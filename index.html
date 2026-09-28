@@ -1,18 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="govuk-template">
 <head>
   <meta charset="utf-8">
-  <title>Prototype</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Check if you can make a claim - GOV.UK</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <link rel="stylesheet"
+        href="./stylesheets/govuk-frontend.min.css">
 </head>
 
-<body>
-  <h1>My GOV.UK prototype</h1>
+<body class="govuk-template__body">
 
-  <p>This is my first prototype page.</p>
+<script>
+  document.body.className +=
+    ' js-enabled' +
+    ('noModule' in HTMLScriptElement.prototype
+      ? ' govuk-frontend-supported'
+      : '');
+</script>
 
-  <p>
-    <a href="page-2.html">Continue</a>
-  </p>
+<header class="govuk-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+
+    <div class="govuk-header__logo">
+      <a href="./index.html"
+         class="govuk-header__link govuk-header__link--homepage">
+        GOV.UK
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper" id="main-content">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          Check if you can make a claim
+        </h1>
+
+        <p class="govuk-body-l">
+          You may be able to make a claim to an employment tribunal.
+        </p>
+
+        <h2 class="govuk-heading-m">
+          Before you make a claim
+        </h2>
+
+        <p class="govuk-body">
+          You should usually try to resolve the problem with your employer first.
+        </p>
+
+        <a href="./page-2.html"
+           class="govuk-button"
+           data-module="govuk-button">
+          Continue
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script type="module">
+  import { initAll } from './javascripts/govuk-frontend.min.js'
+  initAll()
+</script>
+
 </body>
 </html>
