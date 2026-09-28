@@ -1,4 +1,6 @@
 {
+  "name": "makeclaimv2",
+  "private": true,
   "scripts": {
     "build": "node build.js"
   },
