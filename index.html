@@ -13,6 +13,50 @@
 
   <link rel="stylesheet"
         href="./stylesheets/govuk-frontend.min.css">
+<style>
+  .prototype-contents-list {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .prototype-contents-list__title {
+    margin: 0 0 10px;
+    font-family: "GDS Transport", arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+
+  .prototype-contents-list__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "GDS Transport", arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .prototype-contents-list__list li {
+    position: relative;
+    margin: 0 0 10px;
+    padding-left: 25px;
+  }
+
+  .prototype-contents-list__list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .prototype-contents-list__list a {
+    font-size: inherit;
+  }
+
+  .prototype-contents-list__list [aria-current="page"] {
+    font-weight: 400;
+  }
+</style>
 </head>
 
 <body class="govuk-template__body">
