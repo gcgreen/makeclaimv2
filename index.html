@@ -15,30 +15,26 @@
         href="./stylesheets/govuk-frontend.min.css">
 </head>
 
-
 <body class="govuk-template__body">
 
-<script>
-  document.body.className +=
-    ' js-enabled' +
-    ('noModule' in HTMLScriptElement.prototype
-      ? ' govuk-frontend-supported'
-      : '');
-</script>
+  <script>
+    document.body.className +=
+      ' js-enabled' +
+      ('noModule' in HTMLScriptElement.prototype
+        ? ' govuk-frontend-supported'
+        : '');
+  </script>
 
+  <a href="#main-content"
+     class="govuk-skip-link"
+     data-module="govuk-skip-link">
+    Skip to main content
+  </a>
 
-<!-- SKIP LINK -->
+  <!-- GOV.UK HEADER -->
 
-<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">
-  Skip to main content
-</a>
-
-
-<!-- GOV.UK HEADER -->
-
-<header class="govuk-template__header">
-
-  <div class="govuk-header">
+  <header class="govuk-header"
+          data-module="govuk-header">
 
     <div class="govuk-header__container govuk-width-container">
 
@@ -48,218 +44,217 @@
            class="govuk-header__link govuk-header__link--homepage">
 
           <svg
-            focusable="false"
-            role="img"
-            class="govuk-header__logotype"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 148 30"
-            height="30"
-            width="148"
-            aria-label="GOV.UK">
-
-            <title>GOV.UK</title>
-
-            <path
-              fill="currentColor"
-              d="M43.9 17.5c0 5.7-3.1 9.1-8.6 9.1-5.6 0-8.6-3.4-8.6-9.1s3-9.1 8.6-9.1c5.5 0 8.6 3.4 8.6 9.1zm-5.2 0c0-3.9-1.2-5.8-3.4-5.8-2.3 0-3.4 1.9-3.4 5.8 0 4 1.1 5.8 3.4 5.8 2.2 0 3.4-1.8 3.4-5.8z">
-
-            </path>
-
-            <path
-              fill="currentColor"
-              d="M55.7 26.2h-5.9L44 8.8h5.3l3.5 12.5h.1l3.6-12.5h5z">
-            </path>
-
-            <path
-              fill="currentColor"
-              d="M72.7 26.2h-5.2V8.8h5.2v6.7l5.1-6.7h5.8l-6.2 7.7 6.6 9.7h-6l-4.2-6.5-1.1 1.3z">
-            </path>
-
-            <path
-              fill="currentColor"
-              d="M85.1 26.2V8.8h5.2v17.4z">
-            </path>
-
-          </svg>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</header>
-
-
-<!-- SERVICE NAME -->
-
-<section
-  class="govuk-service-navigation"
-  aria-label="Service information">
-
-  <div class="govuk-width-container">
-
-    <div class="govuk-service-navigation__container">
-
-      <span class="govuk-service-navigation__service-name">
-
-        <a href="./index.html"
-           class="govuk-service-navigation__link">
-
-          Make a claim to an employment tribunal
-
-        </a>
-
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- MAIN PAGE -->
-
-<div class="govuk-width-container">
-
-  <main
-    class="govuk-main-wrapper"
-    id="main-content">
-
-    <div class="govuk-grid-row">
-
-      <div class="govuk-grid-column-two-thirds">
-
-
-        <h1 class="govuk-heading-xl">
-          Check if you can make a claim
-        </h1>
-
-
-        <p class="govuk-body-l">
-          You may be able to make a claim to an employment tribunal.
-        </p>
-
-
-        <h2 class="govuk-heading-m">
-          Before you make a claim
-        </h2>
-
-
-        <p class="govuk-body">
-          You should usually try to resolve the problem with your employer first.
-        </p>
-
-
-        <p class="govuk-body">
-          You can use this service to check what you need to do before making a claim.
-        </p>
-
-
-        <a
-          href="./page-2.html"
-          role="button"
-          draggable="false"
-          class="govuk-button govuk-button--start"
-          data-module="govuk-button">
-
-          Start now
-
-          <svg
-            class="govuk-button__start-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="17.5"
-            height="19"
-            viewBox="0 0 33 40"
             aria-hidden="true"
-            focusable="false">
+            focusable="false"
+            class="govuk-header__logotype-crown"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 30"
+            height="30"
+            width="32">
 
             <path
               fill="currentColor"
-              d="m0 0 30 20L0 40z">
+              d="M22.6 10.3c-1-.4-2-.6-2.7-.5
+              1.1-1.6 1.6-3.2 1.4-4.5-.3-1.8-1.5-2.9-3.4-3.1
+              -.9-.1-1.8.1-2.6.5
+              -.8-.4-1.7-.6-2.6-.5
+              -1.9.2-3.1 1.3-3.4 3.1
+              -.2 1.3.3 2.9 1.4 4.5
+              -.7-.1-1.7.1-2.7.5
+              -2 .8-3.2 2.3-3.2 4.1
+              0 1.1.5 2.2 1.5 3.1
+              -1.1.9-1.6 2-1.5 3.2
+              .2 1.6 1.6 2.9 3.7 3.6
+              1 .3 2 .4 3 .4
+              1.2 0 2.4-.2 3.3-.6
+              .9.4 2.1.6 3.3.6
+              1 0 2-.1 3-.4
+              2.1-.7 3.5-2 3.7-3.6
+              .1-1.2-.4-2.3-1.5-3.2
+              1-.9 1.5-2 1.5-3.1
+              0-1.8-1.2-3.3-3.2-4.1z">
             </path>
 
           </svg>
 
-        </a>
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
 
+        </a>
 
       </div>
 
     </div>
 
-  </main>
+  </header>
 
-</div>
+  <!-- SERVICE NAVIGATION -->
 
+  <section
+    class="govuk-service-navigation"
+    aria-label="Service information">
 
-<!-- GOV.UK FOOTER -->
+    <div class="govuk-width-container">
 
-<footer class="govuk-footer">
+      <div class="govuk-service-navigation__container">
+
+        <span class="govuk-service-navigation__service-name">
+
+          <a href="./index.html"
+             class="govuk-service-navigation__link">
+            Make a claim to an employment tribunal
+          </a>
+
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MAIN CONTENT -->
 
   <div class="govuk-width-container">
 
-    <div class="govuk-footer__meta">
+    <main class="govuk-main-wrapper"
+          id="main-content">
 
-      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+      <div class="govuk-grid-row">
 
-        <h2 class="govuk-visually-hidden">
-          Support links
-        </h2>
+        <div class="govuk-grid-column-two-thirds">
 
+          <h1 class="govuk-heading-xl">
+            Check if you can make a claim
+          </h1>
 
-        <ul class="govuk-footer__inline-list">
+          <p class="govuk-body-l">
+            You may be able to make a claim to an employment tribunal.
+          </p>
 
-          <li class="govuk-footer__inline-list-item">
-            <a class="govuk-footer__link" href="#">
-              Help
-            </a>
-          </li>
+          <h2 class="govuk-heading-m">
+            Before you make a claim
+          </h2>
 
-          <li class="govuk-footer__inline-list-item">
-            <a class="govuk-footer__link" href="#">
-              Privacy
-            </a>
-          </li>
+          <p class="govuk-body">
+            You should usually try to resolve the problem with your employer first.
+          </p>
 
-          <li class="govuk-footer__inline-list-item">
-            <a class="govuk-footer__link" href="#">
-              Cookies
-            </a>
-          </li>
+          <p class="govuk-body">
+            You can use this service to check what you need to do before making a claim.
+          </p>
 
-          <li class="govuk-footer__inline-list-item">
-            <a class="govuk-footer__link" href="#">
-              Accessibility statement
-            </a>
-          </li>
+          <a href="./page-2.html"
+             role="button"
+             draggable="false"
+             class="govuk-button govuk-button--start"
+             data-module="govuk-button">
 
-        </ul>
+            Start now
 
+            <svg
+              class="govuk-button__start-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="17.5"
+              height="19"
+              viewBox="0 0 33 40"
+              aria-hidden="true"
+              focusable="false">
 
-        <div class="govuk-footer__meta-custom">
+              <path
+                fill="currentColor"
+                d="m0 0 30 20L0 40z">
+              </path>
 
-          Built by the
-          <a class="govuk-footer__link"
-             href="https://www.gov.uk/government/organisations/ministry-of-justice">
-            Ministry of Justice
+            </svg>
+
           </a>
 
         </div>
 
+      </div>
 
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          class="govuk-footer__licence-logo"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 483.2 195.7"
-          height="17"
-          width="41">
+    </main>
 
-          <path
-            fill="currentColor"
-            d="M
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="govuk-footer">
+
+    <div class="govuk-width-container">
+
+      <div class="govuk-footer__meta">
+
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+          <h2 class="govuk-visually-hidden">
+            Support links
+          </h2>
+
+          <ul class="govuk-footer__inline-list">
+
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="#">
+                Help
+              </a>
+            </li>
+
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="#">
+                Privacy
+              </a>
+            </li>
+
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="#">
+                Cookies
+              </a>
+            </li>
+
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="#">
+                Accessibility statement
+              </a>
+            </li>
+
+          </ul>
+
+          <span class="govuk-footer__licence-description">
+            All content is available under the
+            <a class="govuk-footer__link"
+               href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+               rel="license">
+              Open Government Licence v3.0
+            </a>,
+            except where otherwise stated.
+          </span>
+
+        </div>
+
+        <div class="govuk-footer__meta-item">
+
+          <a
+            class="govuk-footer__link govuk-footer__copyright-logo"
+            href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+            © Crown copyright
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- GOV.UK FRONTEND JAVASCRIPT -->
+
+  <script type="module">
+    import { initAll } from './javascripts/govuk-frontend.min.js'
+    initAll()
+  </script>
+
+</body>
+</html>
