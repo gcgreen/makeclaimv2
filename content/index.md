@@ -2,7 +2,7 @@
 title: Make a claim to an employment tribunal
 ---
 
-## Before making a claim
+## Before making ya claim
 
 You can see if there’s another way to solve the problem before you make a claim to a tribunal, such as using a [grievance procedure](https://www.gov.uk/solve-workplace-dispute/formal-procedures).
 
