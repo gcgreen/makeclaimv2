@@ -23,6 +23,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Remove old generated pages
+        run: |
+          find . -maxdepth 1 -type f -name "*.html" -delete
+
       - name: Build prototype
         run: npm run build
 
@@ -35,6 +39,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- *.html
+          git add -A -- '*.html'
           git diff --cached --quiet || git commit -m "Build prototype"
           git push
